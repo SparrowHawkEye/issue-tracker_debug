@@ -37,8 +37,8 @@ const deleteIssue = id => {
 
 const fetchIssues = () => {
 
-  const issues = JSON.parse(localStorage.getItem('issues'))||[];
-  console.log(issues);
+  const issues = JSON.parse(localStorage.getItem('issues'||[]));
+  // console.log(issues);
   const issuesList = document.getElementById('issuesList');
   issuesList.innerHTML = '';
 
